@@ -11,6 +11,7 @@ import {
 import AnimatedSection, { StaggerContainer, StaggerItem, PageTransition } from '../components/AnimatedSection'
 import SectionHeader from '../components/SectionHeader'
 import MarketTicker from '../components/MarketTicker'
+import cardImage6 from '../../img/card_image_6.png'
 
 const tools = [
   {
@@ -246,10 +247,14 @@ function ToolsResearch() {
       <section className="section-padding bg-dark-900">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Empty image container */}
+            {/* VPS Hosting Image */}
             <AnimatedSection animation="slideLeft">
-              <div className="rounded-2xl bg-dark-600/50 border border-white/5 aspect-video w-full">
-                {/* Intentionally empty image container */}
+              <div className="rounded-2xl overflow-hidden border border-white/5 aspect-video w-full">
+                <img
+                  src={cardImage6}
+                  alt="VPS Hosting"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </AnimatedSection>
 

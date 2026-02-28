@@ -8,6 +8,7 @@ import { FiArrowRight, FiCheck, FiDollarSign, FiInfo } from 'react-icons/fi'
 import AnimatedSection, { StaggerContainer, StaggerItem, PageTransition } from '../components/AnimatedSection'
 import SectionHeader from '../components/SectionHeader'
 import MarketTicker from '../components/MarketTicker'
+import cardImage5 from '../../img/card_image_5.png'
 import ForexHeatmap from '../components/ForexHeatmap'
 import GlobalMarketHeatmap from '../components/GlobalMarketHeatmap'
 import MarketSentiment from '../components/MarketSentiment'
@@ -276,10 +277,14 @@ function Pricing() {
                 </Link>
               </AnimatedSection>
             </div>
-            {/* Empty image container */}
+            {/* Swap-Free Image */}
             <AnimatedSection animation="slideRight" delay={0.2}>
-              <div className="rounded-2xl bg-dark-600/50 border border-white/5 aspect-square w-full max-w-md mx-auto">
-                {/* Intentionally empty image container */}
+              <div className="rounded-2xl overflow-hidden border border-white/5 aspect-square w-full max-w-md mx-auto">
+                <img
+                  src={cardImage5}
+                  alt="Swap-Free Trading"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </AnimatedSection>
           </div>

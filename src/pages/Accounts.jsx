@@ -8,6 +8,7 @@ import { FiArrowRight, FiCheck, FiX, FiUser, FiShield, FiZap } from 'react-icons
 import AnimatedSection, { StaggerContainer, StaggerItem, PageTransition } from '../components/AnimatedSection'
 import SectionHeader from '../components/SectionHeader'
 import MarketTicker from '../components/MarketTicker'
+import cardImage4 from '../../img/card_image_4.png'
 
 const accounts = [
   {
@@ -267,10 +268,14 @@ function Accounts() {
       <section className="section-padding bg-dark-900">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Empty image container */}
+            {/* Fund Safety Image */}
             <AnimatedSection animation="slideLeft">
-              <div className="rounded-2xl bg-dark-600/50 border border-white/5 aspect-square w-full max-w-md mx-auto">
-                {/* Intentionally empty image container */}
+              <div className="rounded-2xl overflow-hidden border border-white/5 aspect-square w-full max-w-md mx-auto">
+                <img
+                  src={cardImage4}
+                  alt="Fund Security"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </AnimatedSection>
 

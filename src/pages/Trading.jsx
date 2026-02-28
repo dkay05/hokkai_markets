@@ -8,6 +8,7 @@ import { FiArrowRight, FiCheck, FiTrendingUp, FiTrendingDown } from 'react-icons
 import AnimatedSection, { StaggerContainer, StaggerItem, PageTransition } from '../components/AnimatedSection'
 import SectionHeader from '../components/SectionHeader'
 import MarketTicker from '../components/MarketTicker'
+import cardImage2 from '../../img/card_image2_.png'
 
 // Market data for the instruments table
 const forexPairs = [
@@ -176,11 +177,15 @@ function Trading() {
                 </Link>
               </AnimatedSection>
 
-              {/* Right: Instruments + Empty image */}
+              {/* Right: Instruments + Image */}
               <AnimatedSection animation="slideRight" key={`${activeTab}-right`}>
-                {/* Empty image container */}
-                <div className="rounded-2xl bg-dark-600/50 border border-white/5 aspect-video w-full mb-6">
-                  {/* Intentionally empty image container */}
+                {/* Card Image */}
+                <div className="rounded-2xl overflow-hidden border border-white/5 aspect-video w-full mb-6">
+                  <img
+                    src={cardImage2}
+                    alt="Trading Platform"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Instruments list */}

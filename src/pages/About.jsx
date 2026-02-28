@@ -11,6 +11,7 @@ import {
 import AnimatedSection, { StaggerContainer, StaggerItem, PageTransition } from '../components/AnimatedSection'
 import SectionHeader from '../components/SectionHeader'
 import MarketTicker from '../components/MarketTicker'
+import cardImage7 from '../../img/card_image_7.png'
 
 const values = [
   {
@@ -38,8 +39,8 @@ const values = [
     icon: <FiUsers size={22} />,
     title: 'Long-Term Relationships',
     desc: 'We build lasting partnerships with our clients by consistently delivering value, reliability, and professional service.',
-    color: 'text-gold-500',
-    bg: 'bg-gold-500/10',
+    color: 'text-red-accent',
+    bg: 'bg-red-accent/10',
   },
   {
     icon: <FiGlobe size={22} />,
@@ -84,18 +85,18 @@ function About() {
       {/* Hero */}
       <section className="relative py-20 hero-bg grid-bg overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-gold-500/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-red-accent/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
         </div>
         <div className="section-container relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection animation="slideLeft">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 border border-gold-500/20 mb-6">
-                <FiGlobe size={14} className="text-gold-400" />
-                <span className="text-gold-400 text-xs font-semibold uppercase tracking-wider">About Hokkai Markets</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-accent/10 border border-red-accent/20 mb-6">
+                <FiGlobe size={14} className="text-red-accent" />
+                <span className="text-red-accent text-xs font-semibold uppercase tracking-wider">About Hokkai Markets</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                A Global Broker Built for <span className="text-gold-gradient">Modern Traders</span>
+                A Global Broker Built for <span className="text-red-gradient">Modern Traders</span>
               </h1>
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
                 Hokkai Markets is a global multi-asset brokerage focused on delivering professional trading solutions to retail and institutional traders worldwide.
@@ -113,10 +114,14 @@ function About() {
               </div>
             </AnimatedSection>
 
-            {/* Empty image container */}
+            {/* About Hero Image */}
             <AnimatedSection animation="slideRight" delay={0.2}>
-              <div className="rounded-2xl bg-dark-600/50 border border-white/5 aspect-square w-full max-w-md mx-auto">
-                {/* Intentionally empty image container */}
+              <div className="rounded-2xl overflow-hidden border border-white/5 aspect-square w-full max-w-md mx-auto">
+                <img
+                  src={cardImage7}
+                  alt="About Hokkai Markets"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </AnimatedSection>
           </div>
@@ -127,7 +132,7 @@ function About() {
       <section className="section-padding bg-dark-800">
         <div className="section-container">
           <AnimatedSection animation="slideUp" className="max-w-4xl mx-auto text-center">
-            <div className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-gold-500/10 to-dark-600 border border-gold-500/20">
+            <div className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-red-accent/10 to-dark-600 border border-red-accent/20">
               <div className="text-4xl mb-6">🎯</div>
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Our Mission</h2>
               <p className="text-gray-300 text-lg leading-relaxed">
@@ -154,7 +159,7 @@ function About() {
                   <div className={`feature-icon ${value.bg} ${value.color} mb-4`}>
                     {value.icon}
                   </div>
-                  <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-gold-400 transition-colors">
+                  <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-red-accent transition-colors">
                     {value.title}
                   </h3>
                   <p className="text-gray-400 text-sm leading-relaxed">{value.desc}</p>
@@ -177,18 +182,18 @@ function About() {
 
           <div className="max-w-3xl mx-auto mt-14 relative">
             {/* Vertical line */}
-            <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-gold-500/50 via-gold-500/20 to-transparent hidden md:block"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-red-accent/50 via-red-accent/20 to-transparent hidden md:block"></div>
 
             <div className="space-y-6">
               {milestones.map((m, i) => (
                 <AnimatedSection key={m.year} animation="slideLeft" delay={i * 0.08}>
                   <div className="flex gap-6 items-start">
                     {/* Year bubble */}
-                    <div className="w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center flex-shrink-0 relative z-10">
-                      <span className="text-gold-400 font-bold text-sm">{m.year}</span>
+                    <div className="w-16 h-16 rounded-2xl bg-red-accent/10 border border-red-accent/20 flex items-center justify-center flex-shrink-0 relative z-10">
+                      <span className="text-red-accent font-bold text-sm">{m.year}</span>
                     </div>
                     {/* Content */}
-                    <div className="flex-1 p-4 rounded-xl bg-dark-600 border border-white/5 hover:border-gold-500/20 transition-all duration-300">
+                    <div className="flex-1 p-4 rounded-xl bg-dark-600 border border-white/5 hover:border-red-accent/20 transition-all duration-300">
                       <h4 className="text-white font-semibold mb-1">{m.title}</h4>
                       <p className="text-gray-400 text-sm">{m.desc}</p>
                     </div>
@@ -213,15 +218,15 @@ function About() {
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
             {team.map((member) => (
               <StaggerItem key={member.name}>
-                <div className="card group text-center hover:border-gold-500/30">
+                <div className="card group text-center hover:border-red-accent/30">
                   {/* Empty avatar container */}
                   <div className="w-20 h-20 rounded-2xl bg-dark-500 border border-white/5 mx-auto mb-4">
                     {/* Intentionally empty image container */}
                   </div>
-                  <h3 className="text-white font-semibold mb-1 group-hover:text-gold-400 transition-colors">
+                  <h3 className="text-white font-semibold mb-1 group-hover:text-red-accent transition-colors">
                     {member.name}
                   </h3>
-                  <p className="text-gold-400 text-xs font-semibold mb-2">{member.role}</p>
+                  <p className="text-red-accent text-xs font-semibold mb-2">{member.role}</p>
                   <p className="text-gray-400 text-xs leading-relaxed">{member.desc}</p>
                 </div>
               </StaggerItem>
@@ -263,7 +268,7 @@ function About() {
                   <div className="text-3xl mb-4">{item.icon}</div>
                   <h3 className="text-white font-semibold mb-3">{item.title}</h3>
                   <p className="text-gray-400 text-sm leading-relaxed mb-4">{item.desc}</p>
-                  <button className="text-gold-400 text-xs font-semibold hover:text-gold-300 transition-colors">
+                  <button className="text-red-accent text-xs font-semibold hover:text-red-light transition-colors">
                     Read Full Document →
                   </button>
                 </div>
@@ -273,9 +278,9 @@ function About() {
 
           {/* Risk Warning */}
           <AnimatedSection animation="slideUp" delay={0.3} className="mt-8">
-            <div className="p-5 rounded-xl bg-yellow-500/5 border border-yellow-500/10">
+            <div className="p-5 rounded-xl bg-red-accent/5 border border-red-accent/10">
               <p className="text-xs text-gray-400 leading-relaxed text-center">
-                <span className="text-yellow-500 font-semibold">Risk Warning: </span>
+                <span className="text-red-accent font-semibold">Risk Warning: </span>
                 Trading leveraged products such as Forex and CFDs carries a high level of risk and may not be suitable for all investors. 
                 The high degree of leverage can work against you as well as for you. Before deciding to trade, you should carefully consider 
                 your investment objectives, level of experience, and risk appetite. The possibility exists that you could sustain a loss of 
@@ -291,7 +296,7 @@ function About() {
         <div className="section-container text-center">
           <AnimatedSection animation="slideUp">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Join the <span className="text-gold-gradient">Hokkai Markets</span> Community
+              Join the <span className="text-red-gradient">Hokkai Markets</span> Community
             </h2>
             <p className="text-gray-400 mb-8 max-w-lg mx-auto">
               Thousands of traders worldwide trust Hokkai Markets for professional-grade execution and transparent conditions.

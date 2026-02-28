@@ -11,6 +11,7 @@ import {
 import AnimatedSection, { StaggerContainer, StaggerItem, PageTransition } from '../components/AnimatedSection'
 import SectionHeader from '../components/SectionHeader'
 import MarketTicker from '../components/MarketTicker'
+import cardImage3 from '../../img/card_image_3.png'
 
 const platforms = [
   {
@@ -164,10 +165,14 @@ function Platforms() {
           {/* Active Platform Detail */}
           {active && (
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left: Empty image container */}
+              {/* Left: Platform Image */}
               <AnimatedSection animation="slideLeft" key={`${activePlatform}-img`}>
-                <div className="rounded-2xl bg-dark-600/50 border border-white/5 aspect-video w-full">
-                  {/* Intentionally empty image container */}
+                <div className="rounded-2xl overflow-hidden border border-white/5 aspect-video w-full">
+                  <img
+                    src={cardImage3}
+                    alt="Trading Platform"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </AnimatedSection>
 

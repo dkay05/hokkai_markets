@@ -17,6 +17,7 @@ const liveChips = [
   { label: 'US30',    value: '38,654', change: '+0.32%', positive: true },
 ]
 
+
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -137,11 +138,8 @@ export default function HeroSection() {
         </motion.div>
 
         {/* Main Heading — Michroma futuristic */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-        >
+        <div>
+          {/* Line 1: TRADE GLOBAL */}
           <h1
             className="font-bold text-white leading-none mb-3"
             style={{
@@ -154,6 +152,8 @@ export default function HeroSection() {
           >
             TRADE GLOBAL
           </h1>
+
+          {/* Line 2: MARKETS — gradient preserved */}
           <h1
             className="font-bold leading-none mb-6"
             style={{
@@ -165,13 +165,12 @@ export default function HeroSection() {
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
-              textShadow: 'none',
               filter: 'drop-shadow(0 0 30px rgba(225,29,72,0.5))',
             }}
           >
             MARKETS
           </h1>
-        </motion.div>
+        </div>
 
         {/* Neon divider */}
         <motion.div
