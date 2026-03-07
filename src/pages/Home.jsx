@@ -1,5 +1,5 @@
 // ============================================
-// HOKKAI MARKETS - Home Page — Cyber-Samurai
+// HOKKAI MARKETS - Home Page - Cyber-Samurai
 // ============================================
 
 import React from 'react'
@@ -11,7 +11,9 @@ import { stats } from './HomeData'
 
 // Section components
 import HeroSection from './home/HeroSection'
+import LiveMarketChartsSection from './home/LiveMarketChartsSection'
 import AboutSection from './home/AboutSection'
+import VisionMissionSection from './home/VisionMissionSection'
 import WhySection from './home/WhySection'
 import MarketsSection from './home/MarketsSection'
 import PlatformSection from './home/PlatformSection'
@@ -19,6 +21,11 @@ import AccountsSection from './home/AccountsSection'
 import ConditionsSection from './home/ConditionsSection'
 import ToolsSection from './home/ToolsSection'
 import EducationSection from './home/EducationSection'
+import IslamicAccountSection from './home/IslamicAccountSection'
+import PaymentsSection from './home/PaymentsSection'
+import PartnerProgramSection from './home/PartnerProgramSection'
+import SecuritySection from './home/SecuritySection'
+import StartTradingSection from './home/StartTradingSection'
 import BottomSection from './home/BottomSection'
 
 // Stat Counter
@@ -59,7 +66,10 @@ function Home() {
       {/* 1. Hero Section */}
       <HeroSection />
 
-      {/* 2. Stats Bar — Glassmorphism */}
+      {/* 2. Live Market Charts */}
+      <LiveMarketChartsSection />
+
+      {/* 3. Stats Bar - Glassmorphism */}
       <section
         className="relative py-10 border-y border-white/5 overflow-hidden"
         style={{ background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(12px)' }}
@@ -88,31 +98,46 @@ function Home() {
         />
       </section>
 
-      {/* 3. About */}
+      {/* 4. About */}
       <AboutSection />
 
-      {/* 4. Why Choose */}
+      {/* 5. Vision Mission Values */}
+      <VisionMissionSection />
+
+      {/* 6. Why Choose */}
       <WhySection />
 
-      {/* 5. Markets */}
+      {/* 7. Markets */}
       <MarketsSection />
 
-      {/* 6. Platform */}
+      {/* 8. Platform */}
       <PlatformSection />
 
-      {/* 7. Accounts */}
+      {/* 9. Accounts */}
       <AccountsSection />
 
-      {/* 8. Conditions */}
+      {/* 10. Conditions */}
       <ConditionsSection />
 
-      {/* 9. Tools */}
-      <ToolsSection />
-
-      {/* 10. Education */}
+      {/* 11. Education */}
       <EducationSection />
 
-      {/* 11. Bottom (Testimonials + FAQ + CTA) */}
+      {/* 12. Islamic Account */}
+      <IslamicAccountSection />
+
+      {/* 13. Payments */}
+      <PaymentsSection />
+
+      {/* 14. Partner Program */}
+      <PartnerProgramSection />
+
+      {/* 15. Security */}
+      <SecuritySection />
+
+      {/* 16. Start Trading */}
+      <StartTradingSection />
+
+      {/* 17. Bottom (Testimonials + FAQ + CTA) */}
       <BottomSection />
 
     </PageTransition>

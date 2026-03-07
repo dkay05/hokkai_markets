@@ -14,9 +14,11 @@ const footerLinks = {
   quickLinks: [
     { label: 'Home',         path: '/' },
     { label: 'About Us',     path: '/about' },
-    { label: 'Contact',      path: '/contact' },
-    { label: 'Open Account', path: '/accounts' },
-    { label: 'Demo Account', path: '/accounts' },
+    { label: 'Markets',      path: '/trading' },
+    { label: 'Platforms',    path: '/platforms' },
+    { label: 'Account Types', path: '/accounts' },
+    { label: 'Promotions',   path: '/pricing' },
+    { label: 'Contact Us',   path: '/contact' },
   ],
   tradingProducts: [
     { label: 'Forex Trading',  path: '/trading' },
@@ -66,14 +68,14 @@ function Footer() {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center mb-5 group w-fit">
               <img
-                src="/logo.png"
+                src="/img/logo1.png"
                 alt="Hokkai Markets"
                 className="h-10 w-auto object-contain transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(225,29,72,0.6)]"
               />
             </Link>
 
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-xs">
-              Hokkai Markets is a global multi-asset brokerage delivering professional trading solutions to retail and institutional traders worldwide.
+              Hokkai Markets is a global multi-asset brokerage providing professional trading solutions for traders worldwide. Our platform combines advanced technology, deep liquidity, and transparent pricing to deliver a powerful trading experience.
             </p>
 
             {/* Contact Info */}

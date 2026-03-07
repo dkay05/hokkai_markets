@@ -155,7 +155,7 @@ export default function AboutSection() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4"
               style={{ fontFamily: "'Michroma', sans-serif", textTransform: 'uppercase', letterSpacing: '0.03em' }}
             >
-              Built on{' '}
+              BUILT ON{' '}
               <span
                 style={{
                   background: 'linear-gradient(135deg, #e11d48, #f43f5e)',
@@ -164,9 +164,8 @@ export default function AboutSection() {
                   backgroundClip: 'text',
                 }}
               >
-                Precision
+                PRECISION &amp; TRUST
               </span>
-              {' '}&amp; Trust
             </h2>
 
             {/* Neon divider */}
@@ -177,10 +176,13 @@ export default function AboutSection() {
 
             <div className="space-y-4 mb-8">
               <p className="text-slate-400 leading-relaxed">
-                Hokkai Markets is built on the foundation of transparency, innovation, and performance. Our mission is to bridge the gap between institutional trading technology and retail traders by delivering powerful tools, fair pricing, and secure infrastructure.
+                Hokkai Markets was founded with a clear vision — to give traders around the world access to professional-grade trading infrastructure, transparent pricing, and reliable support.
               </p>
               <p className="text-slate-400 leading-relaxed">
-                We combine cutting-edge trading systems with strong risk management protocols to create a reliable and professional trading environment — giving every trader access to institutional-grade conditions.
+                Inspired by Japanese precision and global financial expertise, our platform combines advanced technology with deep liquidity to deliver a seamless trading experience.
+              </p>
+              <p className="text-slate-400 leading-relaxed">
+                From beginners entering financial markets to professional algorithmic traders, Hokkai Markets provides the tools, speed, and reliability needed to trade with confidence in global markets.
               </p>
             </div>
 
