@@ -68,7 +68,7 @@ function Footer() {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center mb-5 group w-fit">
               <img
-                src="/img/logo1.png"
+                src="/logo1.png"
                 alt="Hokkai Markets"
                 className="h-10 w-auto object-contain transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(225,29,72,0.6)]"
               />
